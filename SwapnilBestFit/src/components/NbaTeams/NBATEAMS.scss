@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.nba-teams {
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+  padding: 20px 50px 40px;
+  &>header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #074684;
+  }
+  & .search-box{
+    position: relative;
+    & >svg{
+      position: absolute;
+    }
+    &>input[type="search"]::-webkit-search-cancel-button {
+      cursor: pointer;
+    }
+    &>input{
+      border: 2px solid #074684;
+      border-radius: 10px;
+      width: 345px;
+      height: 30px;
+      padding:10px;
+      & button{
+        cursor: pointer;
+      }
+
+    }
+  }
+  & > table{
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 28px;
+  &> thead{
+    background: #074684;
+    color: #FFFFFF;
+    &>tr{
+      &>th:first-child{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      &>th:last-child{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      & th{
+        width: 150px;
+      }
+      &> th>div{
+        padding: 10px;
+        white-space: nowrap;
+      }
+    }
+  }
+  &> tbody{
+    color: #000000;
+    & > tr{
+      text-align: center;
+      background: #F8FBFD;
+      &>td:first-child{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      &>td:last-child{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      &:hover{
+        background-color: grey;
+        cursor: pointer;
+      }
+      &> td>div{
+        padding: 10px;
+
+      }
+    }
+  }
+  }
+  & .pagination-buttons{
+    display: flex;
+    align-self: flex-end;
+    gap: 10px;
+
+    & > button{
+      cursor: pointer;
+    background: #074684;
+    border-radius: 5px;
+    color:#fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    outline:none;
+    border: none;
+    padding:4px 8px;
+    }
+    & .disable-cursor{
+      cursor: not-allowed;
+    }
+  }
+  & .data-not-found{
+    padding: 10px 20px;
+    text-align: center;
+  }
+}

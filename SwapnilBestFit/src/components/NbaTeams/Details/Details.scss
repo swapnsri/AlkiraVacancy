@@ -1,0 +1,56 @@
+.team-details-modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(84, 130, 175,0.5);
+.team-details-season-2021{
+float: right;
+height: 100vh;
+width: 33vw;
+display: flex;
+flex-direction: column;
+gap: 14px;
+background-color: #fff;
+& .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#e8eeec;
+  padding: 15px 6px 15px 20px;
+  &>h3{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &>span{
+    cursor: pointer;
+  }
+}
+
+& .details-align, & .details-align-margin, & .random{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px 20px;
+}
+& .random{
+  font-weight: bold;
+
+}
+& .details-align-margin{
+  font-weight: bold;
+  & >span:first-child{
+    margin-left: 10px;
+  }
+}
+& .no-game-played{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+& .loader{
+  padding: 10px 20px;
+}
+}
+}
