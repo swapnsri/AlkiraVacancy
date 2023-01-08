@@ -65,7 +65,7 @@ const Details=()=>{
 	<div className="team-details-season-2021">
 		<div className='header'>
 			<h3>{state.name}</h3>
-			<span onClick={()=>navigate(-1)}><Close width='20'/></span>
+			<span onClick={()=>navigate(-1)} data-cy={'details-close-icon'}><Close width='20'/></span>
 			</div>
 			{loader?<span className='loader'>Loading Data...</span>:<>
 			{gameDetails.length>0 && gameDetails.map((details:TeamGameDetails)=>{
